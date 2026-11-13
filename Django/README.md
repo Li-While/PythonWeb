@@ -1,4 +1,4 @@
-基于 Django 和 MySQL 的 Web 项目。项目包含用户登录、用户信息管理、后台管理和数据图表页面，可用于学习 Django 的基本开发流程。
+基于 Django + MySQL 的 心血管数据可视化和用户管理网站。项目包含用户登录、用户信息管理、后台管理和数据图表页面，用于学习 Django 的基本开发流程。
 
 ## 主要功能
 
@@ -40,6 +40,22 @@ Liwhale/
 ├── stock-DJI.json           # 图表数据
 ├── manage.py                # Django 管理入口
 └── README.md
+```
+## 数据库
+
+`Liwhale/settings.py` 配置默认数据库：
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'root', # 需要修改成自己的username
+        'PASSWORD': 'PASSWORD', # 需要修改成自己的password
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
 ```
 
 ## 开发步骤
